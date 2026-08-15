@@ -2,9 +2,9 @@
 
 ## Summary
 
-FolioForge is a Vue 3 personal portfolio website for Samyabrata Roy. It is a static frontend app that combines route-level Vue pages, Vuetify components, Tailwind utility styling, and YAML files as the primary content layer.
+FolioForge is a Vue 3 personal portfolio website, forked and customized here for Rounak Biswas, a software developer. It is a static frontend app that combines route-level Vue pages, Vuetify components, Tailwind utility styling, and YAML files as the primary content layer.
 
-The site is designed to present an academic, research, data science, and web development profile. It includes home/profile content, education, experience, research interests, awards and achievements, projects, publications, articles, posters, ongoing projects, teaching and mentoring work, internships, certifications, workshops, conferences, bootcamps, professional activities, affiliations, collaborators, memberships, a gallery, and contact information.
+The upstream template is designed for an academic/research profile and includes many more sections (research interests, publications, teaching, affiliations, workshops, etc.) than this fork uses. In this fork, most of those are turned off via `src/config/featureFlags.ts` — only home/profile content (with the "Research Interest" grid repurposed as a Technical Skills grid), experience, technical projects, and contact are live. The YAML content for the disabled sections still exists in `src/content/profile_info/` (mostly emptied out) but doesn't render anywhere.
 
 ## Current Stack
 
@@ -211,7 +211,7 @@ Key scripts from [package.json](package.json):
 - `@` alias to `src`
 - base path `/`
 
-The sitemap hostname is currently `https://samyabrata.codeium.xyz`.
+The sitemap hostname is currently `https://rounakb10.github.io`.
 
 [wrangler.jsonc](wrangler.jsonc) configures Cloudflare static asset deployment from `./dist` with the project name `folioforge-vue-portfolio-website`.
 

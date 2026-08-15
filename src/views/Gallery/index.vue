@@ -211,7 +211,9 @@ function getGalleryImageById(itemId) {
   if (!itemId) return ''
 
   // Keep external image resolution centralized here so it can be swapped later.
-  return `https://media.samyabrata.codeium.xyz/${encodeURIComponent(itemId)}.jpeg`
+  // No media host is configured for this fork (the Gallery section is off);
+  // set this to your own CDN/base URL if you turn Gallery back on.
+  return `/gallery/${encodeURIComponent(itemId)}.jpeg`
 }
 
 function getTimestamp(value, fallbackIndex) {

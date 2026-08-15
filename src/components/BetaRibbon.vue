@@ -15,8 +15,8 @@
 </template>
 
 <script setup>
-// Marks the beta deployment (beta.samyabrata.codeium.xyz) so it is obvious at a
-// glance which build you are looking at, and offers the way back to stable.
+// Marks the beta deployment so it is obvious at a glance which build you are
+// looking at, and offers the way back to stable.
 //
 // Sits directly under the header. On views that render their own InfoRibbon
 // (Home, Resources) those views place this beneath the announcement themselves;

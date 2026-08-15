@@ -189,7 +189,7 @@
 
       <div class="flex flex-col md:flex-row justify-between items-center">
         <p class="text-gray-500 text-sm">
-          &#169; {{ new Date().getFullYear() }} Samyabrata Roy. Rights Reserved
+          &#169; {{ new Date().getFullYear() }} Rounak Biswas. Rights Reserved
         </p>
 
         <div class="mt-2 flex flex-col items-center gap-1 md:mt-0 md:items-end">

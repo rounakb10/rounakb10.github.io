@@ -1,9 +1,9 @@
 // Resolves institute logos and service icons to their hosted URLs.
 //
-// Both sets used to live in public/ and ship inside dist/ on every build. They
-// are served from media.samyabrata.codeium.xyz now, with the base URLs authored
-// in profile.yml so moving them again is a content edit rather than a hunt
-// through the ten components that reference them.
+// Both sets can live in public/ and ship inside dist/ on every build (the
+// default here), or be served from an external host by setting the base URLs
+// in profile.yml, so moving them is a content edit rather than a hunt through
+// the components that reference them.
 //
 // Names stay bare at the call sites and in the YAML content ("IITM", "Credly").
 // This module owns the two things that were previously repeated inline: joining

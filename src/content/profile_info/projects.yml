@@ -4,6 +4,42 @@ projects:
     description: Real-time chat app built on the MERN stack and Socket.io, with group and one-on-one messaging. Uses ImageKit.io for image uploads with CDN delivery and automatic compression.
     affiliation: Personal Project
     tech_stack: MongoDB, Express.js, React.js, Node.js, Socket.io, Tailwind CSS, ImageKit.io
-    time_period: "2024"
+    time_period: "2023"
     cred_link:
       github: https://github.com/rounakb10/web-chat
+
+  - title: Get A Job
+    type: Technical Project
+    description: Full-stack job listings platform with JWT authentication, built with React, Express, and MongoDB. The API layer adds rate limiting, Mongo sanitization, and XSS protection, with a React dashboard using Recharts for stats.
+    affiliation: Personal Project
+    tech_stack: React.js, Express.js, MongoDB, Mongoose, JWT, Recharts, styled-components
+    time_period: "2023"
+    cred_link:
+      github: https://github.com/rounakb10/get-a-job
+
+  - title: MovieDB
+    type: Technical Project
+    description: Full-stack movie search app querying the TMDB API, with a React and Tailwind CSS frontend backed by a Node/Express server.
+    affiliation: Personal Project
+    tech_stack: React.js, Tailwind CSS, Node.js, Express.js
+    time_period: "2023"
+    cred_link:
+      github: https://github.com/rounakb10/movie-db
+
+  - title: Expense Manager
+    type: Technical Project
+    description: Cross-platform Flutter app for tracking personal expenses, built from a single codebase for Android, iOS, and web.
+    affiliation: Personal Project
+    tech_stack: Flutter, Dart
+    time_period: "2023"
+    cred_link:
+      github: https://github.com/rounakb10/expense_manager
+
+  - title: COVID-19 India Tracker
+    type: Technical Project
+    description: Flutter app for tracking India's COVID-19 case counts state-wise and district-wise, pulling live data from the covid19india.org public API.
+    affiliation: Personal Project
+    tech_stack: Flutter, Dart, REST API
+    time_period: "2022"
+    cred_link:
+      github: https://github.com/rounakb10/covid19_india_flutter

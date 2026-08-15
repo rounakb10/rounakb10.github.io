@@ -1,6 +1,6 @@
 # FolioForge Vue Portfolio Website
 
-A personal academic and professional portfolio for Samyabrata Roy, built with Vue 3, Vite, Vuetify, Tailwind CSS, Vue Router, and YAML-backed content. The site presents education, experience, research interests, projects, publications, teaching work, certifications, professional activities, affiliations, a gallery, and contact details through a static frontend that can be hosted on GitHub Pages, Cloudflare Pages, or another static host.
+A personal portfolio for Rounak Biswas, built with Vue 3, Vite, Vuetify, Tailwind CSS, Vue Router, and YAML-backed content. The site presents an about section, technical skills, work experience, projects, and contact details through a static frontend hosted on GitHub Pages. Most of the original template's academic-focused sections (research interests, publications, teaching, affiliations, workshops, etc.) are turned off via feature flags in `src/config/featureFlags.ts` since they don't apply here.
 
 For a deeper architecture and maintenance guide, see [CONTEXT.md](CONTEXT.md).
 
@@ -121,13 +121,11 @@ Use feature flags when temporarily hiding content or when a section should not a
 
 ## Deployment
 
-The app builds to a static `dist/` directory. Deployment options already represented in the repository include:
+The app builds to a static `dist/` directory. This repo deploys to GitHub Pages automatically via [.github/workflows/deploy-pages.yml](.github/workflows/deploy-pages.yml) on every push to `V1` — it builds with `npm run build` and publishes `dist/` through GitHub's Pages Actions. Enable it once under repo Settings → Pages → Source → "GitHub Actions".
 
-- GitHub Pages via `npm run deploy`
-- Cloudflare static assets via [wrangler.jsonc](wrangler.jsonc)
-- Any static host that can serve the Vite output
+Any other static host that can serve the Vite output (Cloudflare Pages, Netlify, Vercel, etc.) also works if you'd rather deploy elsewhere; `wrangler.jsonc` is left in place for Cloudflare but is unused by default.
 
-The current Vite sitemap hostname is configured as `https://samyabrata.codeium.xyz` in [vite.config.js](vite.config.js). Update it if the production domain changes.
+The current Vite sitemap hostname is configured as `https://rounakb10.github.io` in [src/router/routes.ts](src/router/routes.ts) (`SITE_URL`). Update it if the production domain changes.
 
 ## License
 
