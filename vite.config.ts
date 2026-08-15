@@ -183,9 +183,8 @@ export default defineConfig({
       // genuinely reachable. Runtime hostname checks cannot help here: this
       // <head> is stamped at build time, when there is no hostname.
       noindex: IS_BETA_BUILD,
-      // The portfolio has no dated content of its own; the feed lives on the blog.
-      rssUrl: `${BLOG_URL}/rss.xml`,
-      rssTitle: `${SITE_NAME} · Blog`,
+      // No blog is set up right now, so there is no feed to advertise.
+      ...(BLOG_URL ? { rssUrl: `${BLOG_URL}/rss.xml`, rssTitle: `${SITE_NAME} · Blog` } : {}),
       notFound: {
         path: '/404',
         title: `Page Not Found · ${SITE_NAME}`,

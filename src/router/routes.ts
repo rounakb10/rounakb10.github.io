@@ -20,10 +20,10 @@ export interface RouteMetadata {
   flagMode?: 'all' | 'any'
 }
 
-export const SITE_URL = 'https://samyabrata.codeium.xyz'
-export const SITE_NAME = 'Samyabrata Roy'
-export const BASE_TITLE = 'Samyabrata Roy - Portfolio'
-export const BLOG_URL = 'https://blogs.samyabrata.codeium.xyz'
+export const SITE_URL = 'https://rounakb10.github.io/FolioForge-vue-portfolio-website'
+export const SITE_NAME = 'Rounak Biswas'
+export const BASE_TITLE = 'Rounak Biswas - Portfolio'
+export const BLOG_URL = ''
 
 /** 1200x630 social card, committed at public/og-image.jpg. Replace the file to change it. */
 export const OG_IMAGE_PATH = '/og-image.jpg'
@@ -34,14 +34,14 @@ export const routeMetadata: RouteMetadata[] = [
     name: 'Home',
     title: null,
     description:
-      'Samyabrata Roy — statistics and data science. Associate Software Developer at IDEAS-TIH, ISI Kolkata, and BS Data Science student at IIT Madras.',
+      'Rounak Biswas — software developer building full-stack and data platforms with React, Flutter, FastAPI, and AWS at IDEAS-TIH, Indian Statistical Institute, Kolkata.',
   },
   {
     path: '/projects-publications',
     name: 'ProjectsPublications',
     title: 'Projects & Publications',
     description:
-      'Research publications, technical and research projects, posters, and articles by Samyabrata Roy across statistics, data science, and machine learning.',
+      'Technical projects built by Rounak Biswas, including full-stack web apps and data platform work.',
     flagPath: 'showProjectsPublications',
     flagMode: 'any',
   },
@@ -50,7 +50,7 @@ export const routeMetadata: RouteMetadata[] = [
     name: 'Affilications',
     title: 'Affiliations & Memberships',
     description:
-      'Professional bodies, research networks, and academic communities Samyabrata Roy is affiliated with.',
+      'Professional bodies, research networks, and academic communities Rounak Biswas is affiliated with.',
     flagPath: 'showAffiliations',
     flagMode: 'any',
   },
@@ -59,7 +59,7 @@ export const routeMetadata: RouteMetadata[] = [
     name: 'OngoingProjects',
     title: 'Ongoing Projects',
     description:
-      'Work Samyabrata Roy is currently building — personal, academic, and collaborative projects in statistics, data science, and software development.',
+      'Work Rounak Biswas is currently building — personal, academic, and collaborative projects in statistics, data science, and software development.',
     flagPath: 'showOngoingProjects',
   },
   {
@@ -67,7 +67,7 @@ export const routeMetadata: RouteMetadata[] = [
     name: 'Cocurricular',
     title: 'Co-curricular',
     description:
-      'Leadership roles, volunteering, and co-curricular work Samyabrata Roy takes on alongside academics and research.',
+      'Leadership roles, volunteering, and co-curricular work Rounak Biswas takes on alongside academics and research.',
     flagPath: 'showCocurricular',
     flagMode: 'any',
   },
@@ -76,7 +76,7 @@ export const routeMetadata: RouteMetadata[] = [
     name: 'Workshops',
     title: 'Workshops & Bootcamps',
     description:
-      'Conferences, workshops, and intensive bootcamps in statistics, data science, and AI attended by Samyabrata Roy.',
+      'Conferences, workshops, and intensive bootcamps in statistics, data science, and AI attended by Rounak Biswas.',
     flagPath: 'showWorkshopsAttended',
     flagMode: 'any',
   },
@@ -85,7 +85,7 @@ export const routeMetadata: RouteMetadata[] = [
     name: 'Teachings',
     title: 'Teaching',
     description:
-      'Courses taught, projects mentored, and academic teaching contributions by Samyabrata Roy.',
+      'Courses taught, projects mentored, and academic teaching contributions by Rounak Biswas.',
     flagPath: 'showTeachings',
     flagMode: 'any',
   },
@@ -94,7 +94,7 @@ export const routeMetadata: RouteMetadata[] = [
     name: 'InternshipCertification',
     title: 'Internships & Certifications',
     description:
-      'Internships and professional certifications completed by Samyabrata Roy in data science, statistics, and software development.',
+      'Internships and professional certifications completed by Rounak Biswas in data science, statistics, and software development.',
     flagPath: 'showInternshipCertifications',
     flagMode: 'any',
   },
@@ -103,7 +103,7 @@ export const routeMetadata: RouteMetadata[] = [
     name: 'ProfessionalAcitivity',
     title: 'Professional Activity',
     description:
-      'Invited talks, events hosted or convened, and professional service by Samyabrata Roy.',
+      'Invited talks, events hosted or convened, and professional service by Rounak Biswas.',
     flagPath: 'showProfessionalActivity',
     flagMode: 'any',
   },
@@ -112,7 +112,7 @@ export const routeMetadata: RouteMetadata[] = [
     name: 'Gallery',
     title: 'Gallery',
     description:
-      "A visual timeline of milestones, events, and memorable moments from Samyabrata Roy's academic and professional journey.",
+      "A visual timeline of milestones, events, and memorable moments from Rounak Biswas's academic and professional journey.",
     flagPath: 'showGallery',
   },
   {
@@ -120,7 +120,7 @@ export const routeMetadata: RouteMetadata[] = [
     name: 'Contact',
     title: 'Contact',
     description:
-      'Get in touch with Samyabrata Roy about projects, research collaborations, and opportunities.',
+      'Get in touch with Rounak Biswas about projects, collaborations, and opportunities.',
   },
   {
     path: '/privacy-policy',
@@ -134,7 +134,7 @@ export const routeMetadata: RouteMetadata[] = [
     name: 'Resources',
     title: 'Resources',
     description:
-      'A curated collection of links, materials, and references on statistics, data science, and machine learning, shared by Samyabrata Roy.',
+      'A curated collection of links, materials, and references on statistics, data science, and machine learning, shared by Rounak Biswas.',
     flagPath: 'showResources.main',
   },
   {
@@ -142,7 +142,7 @@ export const routeMetadata: RouteMetadata[] = [
     name: 'Facts',
     title: 'Did You Know?',
     description:
-      'A few quick things you might not know about Samyabrata Roy and how this site is put together.',
+      'A few quick things you might not know about Rounak Biswas and how this site is put together.',
     flagPath: 'showFacts',
   },
 ]

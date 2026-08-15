@@ -1,6 +1,14 @@
+# Repurposed as the "Technical Skills" grid on the Home page (see
+# src/views/Home/components/researchInterests/index.vue). Icon mapping for
+# each key lives in that component's iconMap.
 research_interests:
-  - key: Machine_Learning 
-  - key: Statistical_Modeling
-  - key: Nonparametric_Inference
-  - key: Data_Engineering
-  
+  - key: React.js
+  - key: Node.js
+  - key: TypeScript
+  - key: Python
+  - key: FastAPI
+  - key: PostgreSQL
+  - key: Flutter
+  - key: AWS
+  - key: Docker
+  - key: Git

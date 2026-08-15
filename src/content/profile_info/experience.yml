@@ -1,29 +1,23 @@
 experience:
-  - job_role: Associate Software Developer
+  - job_role: Software Developer
     type: Employment
-    company: Institute of Data Engineering, Analytics and Science Foundation - Technology Innovation Hub, Indian Statistical Institute
+    company: "`Indian Statistical Institute` (IDEAS-TIH)"
     location: Kolkata, WB
-    projects: ["National Platform for Crop Yield Forecasting (NPCYF) - part of the FASAL 2.0 initiative by `Mahalanobis National Crop Forecast Centre (MNCFC)`, `MoAFW, GoI`" , "Upatto - a end-to-end data curation and model-building platform" ]
-    time_period: Oct 2025 - Aug 2026
-    description: [  "Contributed to the NPCYF platform by implementing TabPFN, Panel OLS and Random Forest-based forecasting workflows, integrating hyperparameter tuning into the platform pipeline, optimizing frontend performance through caching, developing backend APIs, enabling feature-flag-driven releases, and automating data ingestion into a MinIO-based data lake"]
-  
-  # - job_role: Freelance Web Developer
-  #   type: Freelance
-  #   company: Upwork
-  #   department: Web Development
-  #   location: Remote
-  #   time_period: Jan 2024 - Present
-  #   description: Successfully completed multiple freelance web development projects on Upwork, delivering high-quality websites and applications that meet client specifications. Utilized skills in front-end and back-end development to create dynamic and user-friendly solutions.
-  #   cred_link: https://www.upwork.com/freelancers/~01f3b1e4b5c9c3e5d6
-
-  - job_role: Student Intern
-    type: Internship
-    company: Institute of Data Engineering, Analytics and Science Foundation - Technology Innovation Hub, Indian Statistical Institute
-    supervisor:
-      name: Mr. Diptendu Dutta
-      title: Technology Lead
-      institution: Institute of Data Engineering, Analytics and Science Foundation (IDEAS-TIH)
-    location: Kolkata, WB
-    time_period: Feb 2025 - Oct 2025
-    description: ["Dedicated 700+ hours to the FASAL 2.0 project, working across agricultural data acquisition, preprocessing, and frontend web application development. Gained hands-on experience building data-driven interfaces and supporting large-scale forecasting workflows under an production environment"]
-    cred_link: '#'
+    time_period: Feb 2024 - Present
+    projects: ["Data Engineering Platform", "Crop Yield Prediction Platform", "Tripura CPI Surveyor System"]
+    description:
+      - "Data Engineering Platform: Led development of a full-stack data engineering platform in ReactJS, Tailwind CSS, and FastAPI for building and monitoring data pipelines."
+      - "Built a drag-and-drop pipeline builder that cut manual configuration time by around 60%."
+      - "Cut the data footprint by over 70% by moving storage to Apache Iceberg and MinIO, while keeping datasets fully versioned."
+      - "Added data-quality dashboards so the team could track and report integrity metrics across pipelines."
+      - "Mentored 2 interns and reviewed more than 30 pull requests, coaching them on Git branching, testing, and clean code."
+      - "Crop Yield Prediction Platform: Built data ingestion pipelines for structured sources and web scraping, removing 4 to 5 hours of manual CSV work each week."
+      - "Designed a feature-generation system that automatically builds complex SQL joins across six or more data categories."
+      - "Set up JWT and cookie-based authentication for three user roles, using PostgreSQL Row-Level Security to keep access rules in the database."
+      - "Led a 10-person intern team through sprint planning and delivery, and introduced Git review workflows that reduced merge conflicts."
+      - "Used AWS (EC2, RDS, S3) to spin up demo-ready environments for Ministry and internal showcases."
+      - "Tripura CPI Surveyor System: Architected an offline-first system with a Flutter app, a React 19 admin dashboard, and a FastAPI backend, supporting CPI data collection across 8 districts."
+      - "Built an async FastAPI and PostgreSQL 17 backend on raw psycopg3, with JWT auto-refresh, OTP-based surveyor login, and role-based access."
+      - "Added a batch sync endpoint with per-record error handling and duplicate detection for offline data uploads."
+      - "Shipped the Flutter app with offline price entry, substitute-shop fallback logic, and a manual sync flow across in-memory, SQLite, and SharedPreferences storage."
+      - "Deployed the system as a live field pilot, with surveyors currently collecting real price data through the app."

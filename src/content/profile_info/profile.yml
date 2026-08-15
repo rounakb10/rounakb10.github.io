@@ -1,39 +1,24 @@
 profile:
-  name: Samyabrata Roy
-  # about: "I am a statistics student currently pursing my masters in statistics from `University of Calcutta`, prior this I was working as an Associate Software Developer at `IDEAS-TIH, ISI Kolkata`. I'm also currently pursuing my second bachelor's degree in Data Science from `IIT Madras`. My interests include data science, machine learning, and statistical modeling. I am passionate about applying statistical techniques to solve real-world problems and contribute to the field of data science."
-  about: "I am a statistics student currently pursing my masters in statistics from `University of Calcutta`, prior this I was working as an Associate Software Developer at `IDEAS-TIH, ISI Kolkata`. I'm also currently pursuing my second bachelor's degree in Data Science from `IIT Madras` and serving as the Website Officer for the `RoSE Network`. My interests include data science, machine learning, and statistical modeling. I am passionate about applying statistical techniques to solve real-world problems and contribute to the field of data science."
-  heading: Statistics and Data Science Student,<br>Techno-optimist #will be used in home page hero section
-  footer: Rookie Statistician | Data Science Student | Full-Stack Developer
-  cv: https://drive.google.com/uc?export=download&id=1qeizy-UFYi6mzu9Y4grn801xs0RpLjoz # google drive link for direct download  #environment: development   # or staging / production
-  betaVersionUrl: https://beta.samyabrata.codeium.xyz # beta deployment (V1 branch); drives the footer link on stable and the header badge on beta
-  # Home hero portrait. Accepts a full URL (hosted image) or a path served
-  # from public/.
-  heroImage: https://media.samyabrata.codeium.xyz/SamyabrataRoy2.jpg
-  heroImageAlt: Samyabrata Roy
+  name: Rounak Biswas
+  about: "I'm a software developer with over two years of experience building full-stack and data platforms end to end — from React and Flutter frontends to FastAPI backends, data pipelines, and AWS deployment. I currently work at Indian Statistical Institute (IDEAS-TIH) in Kolkata, where I build data engineering tools, mentor junior developers, and ship to real users across government and field-data projects. I'm currently focused on backend and data infrastructure."
+  heading: Software Developer,<br>Full-Stack &amp; Data Platform Engineer
+  footer: Software Developer | Full-Stack Engineer | Data Platforms
+  cv: https://docs.google.com/document/d/18O2ZfaX_bKHZQeJmo8sNqWK6AZKKQlAuq-x20I-9uWM/export?format=pdf # Google Doc export link — confirm link-sharing is on
+  heroImage: https://avatars.githubusercontent.com/u/59928003?v=4
+  heroImageAlt: Rounak Biswas
 
-# Where institute logos and service icons are served from. Both were shipped
-# out of public/ and are now hosted, so they no longer bloat every build.
-# Names stay bare in the YAML below ("IITM", "Credly"); src/config/mediaAssets.ts
-# joins them to these bases and appends .png. Clear a value to fall back to the
-# in-repo /logo and /icons paths.
+# Institute logos / service icons. Left blank so the site falls back to the
+# in-repo /logo and /icons paths (no external logos are used right now).
 media:
-  logosBaseUrl: https://media.samyabrata.codeium.xyz/logo
-  iconsBaseUrl: https://media.samyabrata.codeium.xyz/icons
+  logosBaseUrl:
+  iconsBaseUrl:
 
 contacts:
-  gmail: samyaroy00@gmail.com
-  email: 22f2001443@ds.study.iitm.ac.in
-  phone: +91 6291764594
+  gmail: rounakbiswas1002@gmail.com
+  email: rounakbiswas1002@gmail.com
+  phone: "+91 6296759308"
   location: Kolkata, India
 
 socials:
-  github: https://github.com/samyaroy
-  github2: https://github.com/22f2001443
-  kaggle: https://www.kaggle.com/samyabrata0/
-  linkedin: https://www.linkedin.com/in/samyabrata23/
-  #twitter: https://twitter.com/username
-  google_scholar: https://scholar.google.com/citations?user=jC-lqxsAAAAJ&hl=en
-  researchgate: https://www.researchgate.net/profile/Samyabrata-Roy
-  orcid_id: https://orcid.org/0009-0000-5356-4684
-  credly: https://www.credly.com/users/samyabrata-roy
-  blog: https://blogs.samyabrata.codeium.xyz
+  github: https://github.com/rounakb10
+  linkedin: https://www.linkedin.com/in/rounak-biswas/

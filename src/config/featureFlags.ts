@@ -6,13 +6,13 @@ type FeatureFlagNode = {
 
 const DEFAULT_FEATURE_FLAGS = Object.freeze({
   showHome: {
-    showRibbon: true,
+    showRibbon: false,
     showHeroSection: true,
-    showResearchInterests: true,
+    showResearchInterests: true, // repurposed as the "Technical Skills" grid
     showExperience: true,
     showEducation: {
       main: true,
-      showCourseDetailsInfo: true,
+      showCourseDetailsInfo: false,
     },
     showAwards: false,
     showAchivement: false,
@@ -20,8 +20,8 @@ const DEFAULT_FEATURE_FLAGS = Object.freeze({
 
   showProjectsPublications: {
     showArticles: {
-      showGeneralArticles: true,
-      showJournalArticles: true,
+      showGeneralArticles: false,
+      showJournalArticles: false,
     },
     // Controls whether collapsible article sections start expanded (true) or collapsed (false)
     expandArticleSectionsByDefault: {
@@ -29,56 +29,56 @@ const DEFAULT_FEATURE_FLAGS = Object.freeze({
       journalArticles: false,
     },
     showProjects: {
-      showResearchProjects: true,
+      showResearchProjects: false,
       showTechnicalProjects: true,
-      showOtherProjects: true,
+      showOtherProjects: false,
     },
     // Controls whether collapsible project sections start expanded (true) or collapsed (false)
     expandProjectSectionsByDefault: {
-      technicalProjects: false,
+      technicalProjects: true,
       otherProjects: false,
     },
-    showPublications: true,
-    showPosters: true,
+    showPublications: false,
+    showPosters: false,
   },
 
-  showGallery: true,
+  showGallery: false,
 
-  showBlog: true,
+  showBlog: false,
 
   showCocurricular: {
-    showLeadershipOrganizations: true,
-    showVolunteering: true,
+    showLeadershipOrganizations: false,
+    showVolunteering: false,
   },
 
-  showOngoingProjects: true,
+  showOngoingProjects: false,
 
   showInternshipCertifications: {
-    showInternships: true,
-    showCertifications: true,
+    showInternships: false,
+    showCertifications: false,
   },
 
   showWorkshopsAttended: {
-    showConferences: true,
-    showFDPs: true,
+    showConferences: false,
+    showFDPs: false,
     showWorkshops: {
-      main: true,
-      others: true,
+      main: false,
+      others: false,
     },
-    showBootcamps: true,
-    showOther: true,
+    showBootcamps: false,
+    showOther: false,
   },
 
   showTeachings: {
-    showCoursesTaught: true,
-    showProjectsMentored: true,
-    showOtherTeachings: true,
+    showCoursesTaught: false,
+    showProjectsMentored: false,
+    showOtherTeachings: false,
   },
 
   showAffiliations: {
-    showAffiliations: true,
-    showCollaborators: true,
-    showMemberships: true,
+    showAffiliations: false,
+    showCollaborators: false,
+    showMemberships: false,
   },
 
   showProfessionalActivity: {
@@ -90,8 +90,8 @@ const DEFAULT_FEATURE_FLAGS = Object.freeze({
   },
 
   showResources: {
-    main: true,
-    showRibbon: true,
+    main: false,
+    showRibbon: false,
   },
 
   // Controls the "Did you know?" facts page (/facts) and its nav link.
