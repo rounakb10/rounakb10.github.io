@@ -3,7 +3,10 @@ profile:
   about: "I'm a software developer with over two years of experience building full-stack and data platforms end to end — from React and Flutter frontends to FastAPI backends, data pipelines, and AWS deployment. I currently work at Indian Statistical Institute (IDEAS-TIH) in Kolkata, where I build data engineering tools, mentor junior developers, and ship to real users across government and field-data projects. I'm currently focused on backend and data infrastructure."
   heading: Software Developer,<br>Full-Stack &amp; Data Platform Engineer
   footer: Software Developer | Full-Stack Engineer | Data Platforms
-  cv: https://docs.google.com/document/d/18O2ZfaX_bKHZQeJmo8sNqWK6AZKKQlAuq-x20I-9uWM/export?format=pdf # Google Doc export link — confirm link-sharing is on
+  # Google Drive preview link for Rounak_Biswas_SDE_Resume.pdf. Verified to open
+  # anonymously — a Drive file that loses "anyone with the link" sharing sends
+  # visitors to a sign-in wall instead, so re-check this after changing the file.
+  cv: https://drive.google.com/file/d/1ZpBtN84hufnVD3XuD2e6yr4-z1-AlyzC/view?usp=share_link
   heroImage: https://avatars.githubusercontent.com/u/59928003?v=4
   heroImageAlt: Rounak Biswas
 

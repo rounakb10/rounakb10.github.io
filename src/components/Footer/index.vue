@@ -291,11 +291,12 @@ export default {
       // Only the stable site points at beta; on beta itself the header badge
       // already points the other way, and on localhost neither applies.
       showBetaVersionLink: Boolean(profile.betaVersionUrl) && isStableSite(),
-      // logos: {'MSRKAV': 'Mahesh Shri Ramkrishna Ashram Vidyalaya','NN': 'Nava Nalanda High School (Higher Secondary)','SNU': 'Sister Nivedita University', 'IITM': 'Indian Institute of Technology Madras', 'IDEAS-ISI': 'IDEAS Technology Innovation Hub, Indian Statistical Institute', 'CU': 'Calcutta University'},   
-      // logos: {'MSRKAV': 'Mahesh Shri Ramkrishna Ashram Vidyalaya','NN': 'Nava Nalanda High School (Higher Secondary)','SNU': 'Sister Nivedita University', 'IITM': 'Indian Institute of Technology Madras', 'IDEAS-ISI': 'IDEAS Technology Innovation Hub, Indian Statistical Institute', 'CU': 'Calcutta University', 'VLED-IITRPR2': 'Vicharanashala Lab for Education Design, Indian Institute of Technology Ropar'},   
-      // logos: {'SNU': 'Sister Nivedita University', 'IITM': 'Indian Institute of Technology Madras', 'IDEAS-ISI': 'IDEAS Technology Innovation Hub, Indian Statistical Institute', 'CU': 'Calcutta University', 'VLED-IITRPR2': 'Vicharanashala Lab for Education Design, Indian Institute of Technology Ropar'},   
-      logos: {'SNU': 'Sister Nivedita University', 'IITM': 'Indian Institute of Technology Madras', 'IDEAS-ISI': 'IDEAS Technology Innovation Hub, Indian Statistical Institute', 'CU': 'Calcutta University'},  
-      // logos: {'SNU': 'Sister Nivedita University', 'IITM': 'Indian Institute of Technology Madras', 'IDEAS-ISI': 'IDEAS Technology Innovation Hub, Indian Statistical Institute'},
+      // Institute logos for the "Places That Shaped My Journey" strip, as
+      // { logoName: tooltip }. Emptied because the entries here were the
+      // upstream template author's schools, not Rounak's. Populating this also
+      // needs the matching public/logo/<name>.png restored -- see the
+      // showFooter.showJourneyLogos comment in src/config/featureFlags.ts.
+      logos: {},
 
       showJourneyLogos: isFeatureEnabled('showFooter.showJourneyLogos'),
 

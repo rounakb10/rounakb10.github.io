@@ -98,7 +98,9 @@ const DEFAULT_FEATURE_FLAGS = Object.freeze({
   showFacts: false,
 
   // Controls the quote pane rendered between page content and the footer.
-  showPageQuotePane: true,
+  // Off until the quotes in src/content/profile_info/page_quotes.yml are
+  // replaced -- they were inherited from the upstream template, not chosen here.
+  showPageQuotePane: false,
 
   showFooter: {
     // The footer institute-logo strip ("Places That Shaped My Journey").
@@ -112,19 +114,13 @@ const DEFAULT_FEATURE_FLAGS = Object.freeze({
   // Text for each page lives in src/content/profile_info/description.yml.
   // `enabled` is the master switch: when false, every page description is hidden
   // regardless of its per-page flag. When true, each page's own flag decides.
+  // Only the pages that are actually reachable are listed. A page with no entry
+  // here resolves to false, which is the same answer the master switch gives, so
+  // dropping the disabled pages' flags changed nothing.
   showPageDescriptions: {
     enabled: false,
     projectsPublications: false,
-    internshipCertifications: true,
-    cocurricular: true,
-    affiliations: true,
-    resources: true,
     contact: true,
-    ongoingProjects: true,
-    professionalActivity: true,
-    teachings: true,
-    workshopsAttended: true,
-    facts: true,
   },
 }) satisfies FeatureFlagNode
 

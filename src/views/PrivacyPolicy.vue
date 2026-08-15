@@ -23,11 +23,11 @@
             </li>
             <li class="content-justify">
               <span class="font-semibold text-[#0e141b]">External services and links:</span>
-              This site may point to third-party platforms such as GitHub, LinkedIn, Google Drive, Google Scholar, and ResearchGate. Those services have their own privacy practices and terms.
+              This site links out to GitHub, LinkedIn, and Google Drive (for the CV). It also loads a web font from Google Fonts and the profile photo from GitHub, so those two receive your IP address and browser details when a page loads. Each of these services has its own privacy practices and terms.
             </li>
             <li class="content-justify">
               <span class="font-semibold text-[#0e141b]">Analytics and hosting:</span>
-              Basic hosting or visitor statistics tools may collect standard technical data like browser details, page requests, and approximate usage patterns to keep the site available and improve performance.
+              This site uses no analytics, tracking, or visitor-statistics tools, and sets no cookies of its own. It is served as static files by GitHub Pages, which keeps standard server logs such as IP address, request time, and browser details.
             </li>
             <li class="content-justify">
               <span class="font-semibold text-[#0e141b]">Contact:</span>
