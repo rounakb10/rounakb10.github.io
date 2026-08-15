@@ -100,6 +100,14 @@ const DEFAULT_FEATURE_FLAGS = Object.freeze({
   // Controls the quote pane rendered between page content and the footer.
   showPageQuotePane: true,
 
+  showFooter: {
+    // The footer institute-logo strip ("Places That Shaped My Journey").
+    // Re-enabling also needs public/logo/*.png restored -- that folder was
+    // deleted in ba9738f, so the logos 404 today. The source PNGs still live in
+    // src/metadata/logo/institute/.
+    showJourneyLogos: false,
+  },
+
   // Controls the subtitle/description line under each page's title.
   // Text for each page lives in src/content/profile_info/description.yml.
   // `enabled` is the master switch: when false, every page description is hidden

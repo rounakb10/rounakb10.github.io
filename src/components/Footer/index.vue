@@ -6,7 +6,12 @@
 
     <div class="container mx-auto px-1 md:px-2">
       <!-- Footer content -->
-      <div class="grid grid-cols-1 gap-0 md:grid-cols-[minmax(0,39%)_minmax(0,1fr)_max-content]">
+      <div
+        class="grid grid-cols-1 gap-0"
+        :class="hasOtherLinks
+          ? 'md:grid-cols-[minmax(0,39%)_minmax(0,1fr)_max-content]'
+          : 'md:grid-cols-[minmax(0,39%)_minmax(0,1fr)]'"
+      >
         <!-- Brand Section -->
         <div>
           <h3 class="text-xl font-bold mb-6">{{ profile.name }}</h3>
@@ -49,12 +54,12 @@
               <v-icon>mdi-email</v-icon>
             </v-btn>
           </div>
-          <logos :logos="logos" />
+          <logos v-if="showJourneyLogos" :logos="logos" />
         </div>
 
 
         <!-- Other Links -->
-        <div class="min-w-0">
+        <div v-if="hasOtherLinks" class="min-w-0">
           <h4 class="text-lg font-semibold mb-2">Other Links</h4>
           <ul class="space-y-2">
             <!-- <li>
@@ -134,15 +139,12 @@
 
         <div class="grid grid-cols-1 gap-11 md:grid-cols-[max-content_max-content] md:justify-self-end pl-3">
           <!-- Social Links -->
-          <div>
+          <div v-if="socialLinks.length">
             <h4 class="text-lg font-semibold mb-2">Social Links</h4>
 
             <ul class="space-y-2">
-              <li>
-                <a :href="google_scholar" target="_blank">Google Scholar</a>
-              </li>
-              <li>
-                <a :href="researchgate" target="_blank">ResearchGate</a>
+              <li v-for="link in socialLinks" :key="link.label">
+                <a :href="link.href" target="_blank" rel="noopener noreferrer">{{ link.label }}</a>
               </li>
             </ul>
           </div>
@@ -166,19 +168,14 @@
                 <v-icon size="small" class="mr-2">mdi-email</v-icon>
                 <span>{{ email }}</span>
               </div> -->
-              <div class="flex items-center">
+              <div v-if="phone" class="flex items-center">
                 <v-icon size="small" class="mr-2">mdi-phone</v-icon>
                 <span>{{ phone }}</span>
               </div>
-              <div class="flex items-center">
+              <div v-if="location" class="flex items-center">
                 <v-icon size="small" class="mr-2">mdi-map-marker</v-icon>
                 <span>{{ location }}</span>
               </div>
-            </div>
-            <div class="pt-4 pb-0">
-              <a href="https://info.flagcounter.com/Wh9G"><img
-                  src="https://s01.flagcounter.com/count2/Wh9G/bg_FFFFFF/txt_000000/border_CCCCCC/columns_3/maxflags_15/viewers_0/labels_0/pageviews_1/flags_0/percent_0/"
-                  alt="Flag Counter" border="0"></a>
             </div>
           </div>
         </div>
@@ -224,15 +221,6 @@
             <br />
             Please fork/clone from there — not directly from the site’s source
           </p>
-
-          <p class="text-gray-500 text-sm mt-1">
-            &#9432; Some icons used are made by
-            <a href="https://www.flaticon.com/authors/freepik" target="_blank">Freepik</a>
-            &
-            <a href="https://www.flaticon.com/authors/smashicons" target="_blank">Smashicons</a>
-            from
-            <a href="https://www.flaticon.com/free-icons/class" target="_blank">Flaticon</a>
-          </p>
         </div>
 
         <p class="text-gray-500 text-sm mt-2 md:mt-0">
@@ -250,6 +238,15 @@ import AnimatedIcon from "@/components/ui/AnimatedIcon.vue";
 import { isFeatureEnabled } from '@/config/featureFlags'
 import { isStableSite } from '@/config/siteEnvironment'
 
+// Text links rendered in the footer's "Social Links" column, in display order.
+// Only keys with a value under `socials:` in profile.yml are rendered, so adding
+// or dropping a profile is a content edit -- no change needed here.
+const SOCIAL_LINKS = [
+  { key: 'google_scholar', label: 'Google Scholar' },
+  { key: 'researchgate', label: 'ResearchGate' },
+  { key: 'orcid', label: 'ORCID' },
+]
+
 export default {
   components: {
     Logos,
@@ -266,6 +263,16 @@ export default {
       isFeatureEnabled('showAffiliations.showAffiliations')
       || isFeatureEnabled('showAffiliations')
     )
+    // The "Other Links" column is nothing but flagged router-links, so without at
+    // least one of them the heading would stand alone above an empty list.
+    const hasOtherLinks = (
+      showCocurricularLink
+      || showOngoingProjectsLink
+      || showInternshipCertificationsLink
+      || showWorkshopsAttendedLink
+      || showResourcesLink
+      || showAffiliationsLink
+    )
 
     return {
       profile,
@@ -277,8 +284,9 @@ export default {
       github2: socials.github2,
       linkedin: socials.linkedin,
       kaggle: socials.kaggle,
-      google_scholar: socials.google_scholar,
-      researchgate: socials.researchgate,
+      socialLinks: SOCIAL_LINKS
+        .map(({ key, label }) => ({ label, href: socials[key] }))
+        .filter((link) => Boolean(link.href)),
       betaVersionUrl: profile.betaVersionUrl,
       // Only the stable site points at beta; on beta itself the header badge
       // already points the other way, and on localhost neither applies.
@@ -289,7 +297,10 @@ export default {
       logos: {'SNU': 'Sister Nivedita University', 'IITM': 'Indian Institute of Technology Madras', 'IDEAS-ISI': 'IDEAS Technology Innovation Hub, Indian Statistical Institute', 'CU': 'Calcutta University'},  
       // logos: {'SNU': 'Sister Nivedita University', 'IITM': 'Indian Institute of Technology Madras', 'IDEAS-ISI': 'IDEAS Technology Innovation Hub, Indian Statistical Institute'},
 
+      showJourneyLogos: isFeatureEnabled('showFooter.showJourneyLogos'),
+
       last_updated_on: config.last_updated_on,
+      hasOtherLinks,
       showCocurricularLink,
       showOngoingProjectsLink,
       showInternshipCertificationsLink,
