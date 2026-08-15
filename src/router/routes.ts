@@ -20,7 +20,7 @@ export interface RouteMetadata {
   flagMode?: 'all' | 'any'
 }
 
-export const SITE_URL = 'https://rounakb10.github.io/FolioForge-vue-portfolio-website'
+export const SITE_URL = 'https://rounakb10.github.io'
 export const SITE_NAME = 'Rounak Biswas'
 export const BASE_TITLE = 'Rounak Biswas - Portfolio'
 export const BLOG_URL = ''

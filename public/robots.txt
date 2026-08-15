@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rounakb10.github.io/FolioForge-vue-portfolio-website/sitemap.xml
+Sitemap: https://rounakb10.github.io/sitemap.xml
